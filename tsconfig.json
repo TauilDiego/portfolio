@@ -38,5 +38,8 @@
   ],
   "exclude": [
     "node_modules"
+  ],
+  "files": [
+    "./src/shims-vue.d.ts",
   ]
 }
