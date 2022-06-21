@@ -4,12 +4,11 @@
 </template>
 
 <script lang="ts">
-const nomeCliente = process.env.NOME_CLIENTE
 
 export default {
 data() {
   return {
-    nomeCliente,
+    nomeCliente: process.env.NOME_CLIENTE,
   }
 },
 }
