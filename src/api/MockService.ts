@@ -8,6 +8,7 @@ export function fakeRequest(mockFile: string, mockValue: string, ms?: number){
     }
 
     const requestMs = ms || Math.floor(Math.random()*1000)
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
     const file = require(`@/tests/mocks/${mockFile}.json`)
 
     setTimeout(()=>{

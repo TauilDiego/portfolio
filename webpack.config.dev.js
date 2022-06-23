@@ -63,7 +63,7 @@ const config = {
     new ForkTsCheckerWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
-      "process.env": JSON.stringify(process.env)
+      "process.env": JSON.stringify(environment)
     }),
   ],
 }

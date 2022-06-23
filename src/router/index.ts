@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
-import VitrineHome from '@/views/VitrineHome.vue'
+import HomeWelcome from '@/views/Home/HomeWelcome.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    component: VitrineHome
+    component: HomeWelcome
   },
 ]
 
