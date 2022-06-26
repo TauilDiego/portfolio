@@ -42,5 +42,6 @@
   ],
   "files": [
     "./src/shims-vue.d.ts",
-  ]
+  ],
+  "extends": "@quasar/app-webpack/tsconfig-preset"
 }
