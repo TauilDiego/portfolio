@@ -1,30 +1,40 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <q-layout view="lHh Lpr lFf">
+    <HeaderComponent />
+
+    {{ leftDrawerOpen }}
+
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+export default {
+  name: "app"
+};
+</script>
 
-nav {
-  padding: 30px;
-}
+<script lang="ts" setup>
+import HeaderComponent from "./components/header/HeaderComponent.vue";
+import { leftDrawerOpen } from "./App";
+import { computed } from "@vue/reactivity";
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+let userId = 1231231;
+let userName = "diego";
+const user = computed(() => { 
+  return {
+    userName,
+    userId
+    } 
+  })
 
-nav a.router-link-exact-active {
-  color: #42b983;
+let footerText = "texto do footer";
+
+let drawerOption = true;
+function changeDrawerOption() {
+  drawerOption = !drawerOption;
 }
-</style>
+</script>
