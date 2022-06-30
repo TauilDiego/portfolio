@@ -1,6 +1,6 @@
 <template>
   <q-header elevated class="">
-    <q-toolbar>
+    <q-toolbar class="bg-green">
       <q-btn
         flat
         dense
@@ -12,7 +12,6 @@
 
       <q-toolbar-title> Portfolio </q-toolbar-title>
 
-      <div>Quasar v{{ $q.version }}</div>
     </q-toolbar>
   </q-header>
 </template>
