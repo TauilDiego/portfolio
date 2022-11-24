@@ -5,16 +5,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "cy:open": "npx cypress open",
     "lint": "vue-cli-service lint",
     "analyseDev": "cross-env NODE_ENV=development --env.ANALYSE=true webpack --hot --config webpack.config.common.js",
     "dev": "cross-env NODE_ENV=development webpack serve --hot --open --config webpack.config.dev.js"
   },
   "dependencies": {
+    "@quasar/extras": "^1.0.0",
     "core-js": "^3.8.3",
     "dotenv": "^16.0.1",
-    "vue": "^3.2.13",
-    "@quasar/extras": "^1.0.0",
     "quasar": "^2.6.0",
+    "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@cypress/vue": "^4.0.0",
     "@quasar/app-webpack": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",

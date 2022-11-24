@@ -1,20 +1,20 @@
 <template>
-  <div>
-        <q-circular-progress
-      :value="71"
-      size="50px"
-      color="orange"
-      class="q-ma-md"
-    />
+  <div style="width: 100%; height:100%;">
+  asd
   </div>
 </template>
 
 <script>
-export default {
 
-}
+
+export default {
+  setup(){
+
+    
+    
+  }
+};
 </script>
 
 <style>
-
 </style>

@@ -1,9 +1,7 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <HeaderComponent />
-
-    {{ leftDrawerOpen }}
-
+  <q-layout view="hHh Lpr lFf">
+    <HomeHeader />
+    <SideDrawer />
 
     <q-page-container>
       <router-view />
@@ -12,29 +10,15 @@
 </template>
 
 <script lang="ts">
+import HomeHeader from "@/components/header/HomeHeader.vue";
+import SideDrawer from "./components/drawer/SideDrawer.vue";
+
 export default {
-  name: "app"
+  name: "app",
+  components: { HomeHeader, SideDrawer },
+  
+  mounted() {
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+  },
 };
-</script>
-
-<script lang="ts" setup>
-import HeaderComponent from "./components/header/HeaderComponent.vue";
-import { leftDrawerOpen } from "./App";
-import { computed } from "@vue/reactivity";
-
-let userId = 1231231;
-let userName = "diego";
-const user = computed(() => { 
-  return {
-    userName,
-    userId
-    } 
-  })
-
-let footerText = "texto do footer";
-
-let drawerOption = true;
-function changeDrawerOption() {
-  drawerOption = !drawerOption;
-}
 </script>
