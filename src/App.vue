@@ -19,6 +19,15 @@ export default {
   
   mounted() {
     // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+        // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+    // setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches)
+
+  
   },
 };
 </script>
